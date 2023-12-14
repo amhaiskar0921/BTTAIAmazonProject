@@ -52,7 +52,7 @@ F1-scores:
 <img width="1000" alt="image" src="https://github.com/amhaiskar0921/BTTAIAmazonProject/assets/43621944/32e7f246-555e-4b71-b006-2b20f4c9684f">
 
 ## Limitations of using Google Colab
-* GPU unit limits in the free tier
-      * We had several RAM overflow issues in the training and preprocessing phases. We mitigated these through random sampling from our large-scale datasets and separating preprocessing and modeling in separate notebooks
-      * Saved preprocessed, merged dataaet as a separate file we could load in our modeling notebook without wasting available RAM
-* With a more powerful local environment, or by purchasing more GPU units on Colab, we can further improve our models' performance by training on more data
+- **GPU unit limits in the free tier**  
+* We had several RAM overflow issues in the training and preprocessing phases. We mitigated these through random sampling from our large-scale datasets and separating preprocessing and modeling in separate notebooks
+* Saved preprocessed, merged dataaet as a separate file we could load in our modeling notebook without wasting available RAM
+- With a more powerful local environment, or by purchasing more GPU units on Colab, we can further improve our models' performance by training on more data
