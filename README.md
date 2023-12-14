@@ -47,7 +47,7 @@ F1-scores:
 <img width="1000" alt="image" src="https://github.com/amhaiskar0921/BTTAIAmazonProject/assets/43621944/b133af27-cef3-4861-81aa-2e9efbb543c7"> Baseline BERT scores are from the bert-base-multiligual-cased prior to fine-tuning
 
 ### Interpretation
-* Logistic Regression (pure ML approach) and fine-tuned BERT perform equally well for this task
+* Logistic Regression (pure ML approach) and fine-tuned BERT perform equally well for this task (**this was a novel, unexpected finding**)
 * Logistic Regression takes considerably less training time and memory than BERT
 <img width="1000" alt="image" src="https://github.com/amhaiskar0921/BTTAIAmazonProject/assets/43621944/32e7f246-555e-4b71-b006-2b20f4c9684f">
 
