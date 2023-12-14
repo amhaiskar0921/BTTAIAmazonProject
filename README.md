@@ -42,3 +42,4 @@ Given a query and a result list of products retrieved for this query, classify e
      2. Trained the model on tokenized training data
 
 ## Evaluation
+**Used micro-averaging F1-score to account for class imbalance in the label classes**
