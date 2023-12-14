@@ -44,5 +44,5 @@ Given a query and a result list of products retrieved for this query, classify e
 ## Evaluation
 **Used micro-averaging F1-score to account for class imbalance in the label classes**  
 F1-scores:  
-<img width="650" alt="image" src="https://github.com/amhaiskar0921/BTTAIAmazonProject/assets/43621944/b133af27-cef3-4861-81aa-2e9efbb543c7">
+<img width="900" alt="image" src="https://github.com/amhaiskar0921/BTTAIAmazonProject/assets/43621944/b133af27-cef3-4861-81aa-2e9efbb543c7">
 * Baseline BERT scores are from the bert-base-multiligual-cased prior to fine-tuning
