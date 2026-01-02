@@ -4,7 +4,7 @@
 Given a query and a result list of products retrieved for this query, classify each product as being an **Exact**, **Substitute**, **Complement**, or **Irrelevant** match for the query.  
 
 ## Members
-- Arya Mhaiskar 
+- Arya Mhaiskar (Lead)
 - Rayyan Ashraf
 - Lucy Yin
 - Isabella Qian
