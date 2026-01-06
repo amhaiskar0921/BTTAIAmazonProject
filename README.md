@@ -38,9 +38,18 @@ Given a query and a result list of products retrieved for this query, classify e
      2. Created TensorFlow Dataset objects for training and testing
      3. Fine-tuned the model with training data
 2. Logistic Regression
-     1. TD-IDF and Count Vectorier for language-independent tokenization
+     1. TF-IDF and Count Vectorizer for language-independent tokenization
      2. Trained the model on tokenized training data
-
+ 3. Random Forest (Added later)
+     1. TF-IDF for language-independent tokenization
+     2. Trained the model on tokenized training data
+     3. The model had decent accuracy (64%), but low F1-score since it only guessed the majority class correctly
+ 3. Complement Naive Bayes (Added later)
+     1. TF-IDF for language-independent tokenization
+     2. The Complement Naive Bayes (CNB) variant of the Naive Bayes algorithm is good for imbalanced class datasets and text classification
+     3. Trained the model on tokenized training data
+     4. The model had an F1-score of 0.40
+        
 ## Evaluation
 **Used micro-averaging F1-score to account for class imbalance in the label classes**  
 F1-scores:  
