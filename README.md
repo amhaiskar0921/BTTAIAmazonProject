@@ -18,13 +18,16 @@ Given a query and a result list of products retrieved for this query, classify e
 **Dataset 2:** Product metadata including the product ID, title, description, brand, and color
 **Languages:** User search queries and product metadata in *English*, *Spanish*, and *Japanese*  
 **Source:** [Task 2 from Amazon KDD Cup'22 Challenge](https://github.com/amazon-science/esci-data/tree/main)  
+**Class frequencies:**
+- 65.17% Exacts, 21.91% Substitutes, 2.89% Complements and 10.04% Irrelevants
+- 13.6% queries and products in Spanish, 17.0% in Japanese, 69.4% in English
 
 ## Preprocessing
 1. Data cleaning
-    1. Merged datasets, removed unnecessary columns
-    2. Converted remaining columns to lowercase
-    3. Removed HTML tags and non-alphanumeric characters
-    4. Removed stopwords
+    1. Merged datasets, removed unnecessary columns like the query ID
+    3. Converted remaining columns to lowercase
+    4. Removed HTML tags and non-alphanumeric characters like emojis across all 3 languages
+    6. Removed stopwords
 2. Data preprocessing
     1. Stemming
          1. nltk PorterStemmer for English, SnowballStemmer for Spanish
@@ -63,5 +66,8 @@ F1-scores:
 ## Limitations of using Google Colab
 - **GPU unit limits in the free tier**  
 * We had several RAM overflow issues in the training and preprocessing phases. We mitigated these through random sampling from our large-scale datasets and separating preprocessing and modeling in separate notebooks
-* Saved preprocessed, merged dataaet as a separate file we could load in our modeling notebook without wasting available RAM
+* Saved the preprocessed, merged dataset as a separate file we could load in our modeling notebook without wasting available RAM
 - With a more powerful local environment, or by purchasing more GPU units on Colab, we can further improve our models' performance by training on more data
+## Next Steps
+1. Experiment with more models (added Random Forest and Complement Naive Bayes above)
+2. Create a more balanced dataset to train the models
